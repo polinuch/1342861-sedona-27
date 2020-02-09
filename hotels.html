@@ -21,36 +21,30 @@
 </header>
 
 <main>
- <article class="form">
-   <section class="infrastructure">
+ <form method="get" action="https://echo.htmlacademy.ru/courses">
+   <fieldset>
      <img src="filter backgroung.jpeg" width="1200" height="800"">
-     <h2> Инфраструктура</h2>
-     <ul>
-       <li>Бассейн</li>
-       <li>Парковка</li>
-       <li>Wi-fi</li>
-     </ul>
-   </section>
+     Инфраструктура
+     <label>
+     <input type="checkbox" value="swimmingpool" checked> Бассейн
+     <input type="checkbox" value="parking"> Парковка
+     <input type="checkbox"  value="wi-fi"> Wi-fi
+     </label>
+      Тип жилья
+     <label>
+     <input type="checkbox" value="hotel" checked> Гостиница
+     <input type="checkbox" value="motel" checked> Мотель
+     <input type="checkbox" value="apartment" checked>  Апартаменты
+     </label>
 
-   <section class="hotel's type">
-     <h2> Тип жилья </h2>
-     <ul>
-       <li>Гостиница</li>
-       <li>Мотель</li>
-       <li>Апартаменты</li>
-     </ul>
-   </section>
+      Стоимость в сутки (Р)
+     <input type="number" min="0" max="3000">
+      <input type="range" min="0" max="3000">
+     <img src="filter-button.svg" width="20" height="22">
+     <button class="result"> Показать </button>
 
-   <section>
-     <h2> Стоимость в сутки (Р)</h2>
-     <table>
-       <th>от 0 </th>
-       <th> до 3000 </th>
-     </table>
-     <img src="filter-button.svg" width="20" height="22">
-     <img src="filter-button.svg" width="20" height="22">
-     <button> Показать </button>
-   </section>
+   </fieldset>
+ </form>
 
    <section class="searching results">
      <div> Найдено </div>
