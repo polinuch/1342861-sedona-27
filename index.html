@@ -16,10 +16,10 @@
     <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
     </a>
     <ul class="site-navigation">
-        <li> <a href="info.html">Информация </a> </li>
-        <li> <a href="photovideo.html">Фото и видео </a> </li>
-        <li> <a href="map.html"> Карта штата </a></li>
-        <li> <a href="hotels.html"> Гостиницы </a></li>
+        <li> <a href="info.html" class="nav-item">Информация </a> </li>
+        <li> <a href="photovideo.html" class="nav-item">Фото и видео </a> </li>
+        <li> <a href="map.html" class="nav-item"> Карта штата </a></li>
+        <li> <a href="hotels.html" class="nav-item"> Гостиницы </a></li>
       </ul>
   </nav>
 </header>
@@ -104,22 +104,22 @@
       <p class="trip-date"> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
     </div>
 
-    <form class="searching" method="get" action="https://echo.htmlacademy.ru/courses">
-    <button type="submit" value="Поиск гостиницы в Седоне"> Поиск гостиницы в Седоне</button>
-      <fieldset>
+    <form class="form-result2" method="get" action="https://echo.htmlacademy.ru/courses">
+    <button type="submit" class="button" value="Поиск гостиницы в Седоне"> Поиск гостиницы в Седоне</button>
+      <fieldset class="submit">
       <label for="check-in date"> Дата заезда </label>
-      <input type="date" name="check-in" id="check-in date" placeholder="24 апреля 2017">
+      <input type="date" name="check-in" id="check-in date" placeholder="24 апреля 2017" class="date">
       <label for="check-out date"> Дата заезда </label>
-      <input type="date" name="check-out" id="check-out date" placeholder="4 июля 2017">
+      <input type="date" name="check-out" id="check-out date" placeholder="4 июля 2017" class="date">
       <label for="total-fields"> Взрослые</label>
-      <button> - </button>
-      <input type="text" name="total" id="total-fields" placeholder="2">
-        <button> + </button>
+      <button class="but-item"> - </button>
+      <input type="text" name="total" id="total-fields" placeholder="2" class="date">
+        <button class="but-item"> + </button>
       <label for="children-total">Дети</label>
-        <button> - </button>
-      <input type="text" name="total2" id="children-total" placeholder="0">
-        <button> + </button>
-        <button type="submit" value="Найти"> Найти </button>
+        <button class="but-item"> - </button>
+      <input type="text" name="total2" id="children-total" placeholder="0" class="date">
+        <button class="but-item"> + </button>
+        <button type="submit" value="Найти" class="but-submit"> Найти </button>
     </fieldset>
     </form>
     <img src="img/map.jpg" class="map" width="1718" height="748" alt="карта окресностей Седоны">
@@ -135,28 +135,24 @@
   <div class="socials">
     <ul class="socials-icon">
       <li>
-        <a href="#">
-        <img src="img/t.svg" width="17" height="15" alt="иконка твиттер">
+        <a href="#" class="si-twitter">
         Twitter
         </a>
       </li>
       <li>
-        <a href="#">
-        <img src="img/fb-icon.svg" width="12" height="22" alt="иконка фейсбук">
+        <a href="#" class="si-facebook">
         Facebook
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="si-youtube">
           Youtube
-        <img src="img/youtube.svg.svg" width="20" height="16" alt="иконка ютуб">
       </a>
       </li>
     </ul>
   </div>
   <div class="copyright">
-    Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo_name.svg" width="115" height="41" alt="логотип HTML Academy">
+    Website by <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-item">
     HTML Academy
   </a>
   </div>

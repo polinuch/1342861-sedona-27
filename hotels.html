@@ -27,7 +27,6 @@
 <main>
  <form method="get" action="https://echo.htmlacademy.ru/courses">
    <fieldset class="form">
-     <img src="img/filter-background.jpg" width="1200" height="800"">
      <p class="topic"> Инфраструктура </p>
      <label class="form-items">
      <input type="checkbox" value="swimmingpool" checked> Бассейн
@@ -41,23 +40,24 @@
      <input type="checkbox" value="apartment" checked>  Апартаменты
      </label class="form-items">
      <p class="topic"> Стоимость в сутки (Р) </p>
-     <input type="number" min="0" max="3000">
-      <input type="range" min="0" max="3000">
+     <input text="text" name="от 0" placeholder="от 0">
+     <input text="text" name="от 0" placeholder="до 3000">
+     <input type="range" min="0" max="3000">
      <img src="filter-button.svg" width="20" height="22">
      <button class="result"> Показать </button>
    </fieldset>
  </form>
 
-   <section class="searching results">
-     <div> Найдено </div>
-     <div> Сортировка
-       <ur>
-         <li> по цене </li>
-         <li> по рейтингу </li>
-         <li> по типу </li>
-       </ur>
-       <img src="img/icon-down-dir.svg" width="11" height="10">
-       <img src="img/icon-up-dir.svg" width="11" height="10">
+   <section class="searching-results">
+     <div class="form-result"> Найдено:3 </div>
+     <div class="sort"> Сортировка
+       <ul class="list">
+         <li> <a href="#" class="list">  по цене </a></li>
+         <li> <a href="#" class="list"> по рейтингу </a></li>
+         <li> <a href="#" class="list"> по типу </a></li>
+       </ul>
+       <button width="11" height="10" class="but-item2">
+       <button width="11" height="10" class="but-item3">
      </div>
    </section>
 
@@ -133,28 +133,24 @@
   <div class="socials">
     <ul class="socials-icon">
       <li>
-        <a href="#">
-          <img src="img/t.svg" width="17" height="15" alt="иконка твиттер">
+        <a href="#" class="si-twitter visually-hidden">
           Twitter
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/fb-icon.svg" width="12" height="22" alt="иконка фейсбук">
+        <a href="#" class="si-facebook">
           Facebook
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="si-youtube">
           Youtube
-          <img src="img/youtube.svg" width="20" height="16" alt="иконка ютуб">
         </a>
       </li>
     </ul>
   </div>
   <div class="copyright">
-    Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
-    <img src="img/logo_name.svg" width="115" height="41" alt="логотип HTML Academy">
+    Website by <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-item">
     HTML Academy
   </a>
   </div>
